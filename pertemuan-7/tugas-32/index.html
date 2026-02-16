@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas-32</title>
+  </head>
+  <body>
+    <div id="welcomeBox">Selamat datang...</div>
+    <span id="studentName">Nama belum diisi</span>
+
+    <div id="noteArea"></div>
+
+    <div id="resultBox"></div>
+    <input type="text" id="userGender" placeholder="Masukkan jenis kelamin" />
+    <button
+      onclick="
+        document.getElementById('resultBox').textContent =
+          document.getElementById('userGender').value
+      "
+    >
+      Tampilkan
+    </button>
+
+    <input type="text" id="contactNumber" value="Nomor belum diisi" />
+
+    <div id="articleContainer"></div>
+    <button
+      onclick="
+        document.getElementById('articleContainer').innerHTML += '<p> paragraf baru</p>'
+      "
+    >
+      Tambah Paragraf
+    </button>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
